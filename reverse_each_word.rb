@@ -11,8 +11,7 @@
 
 def reverse_each_word(string)
   array = string.split(" ")
-  output = array.collect {|word| word.reverse}
-  return output.join(" ")
+  array.collect {|word| word.reverse}.join(" ")
 end
 
 # reverse_each_word("Hello there, and how are you?")
